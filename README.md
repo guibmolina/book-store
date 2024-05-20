@@ -1,34 +1,35 @@
 ##
 ## Book Store
 
-## local deployment:
+## Local deployment
 
-Clone this repository
+Make clone in your local
 
 ```bash
-git clone git@github.com:guibmolina/client-maneger.git
+git clone git@github.com:guibmolina/book-store.git
 ```
 
-### Install Project
-***
+**For deployment with docker is required to install [Docker](https://docs.docker.com/desktop/)**
 
-### Requirements
-PHP 8^ &&
-MySQL
+With docker installed run on terminal  `docker-compose up -d`.
 
-Copy `.env.example` and rename for `.env`.
+Copy filw `.env.example` e rename for  `.env` like the example.
 
 ```bash
 cp .env.example .env
 ```
-Run these commands
+
+After creating the `.env` file, it will be necessary to access the application container to run some Laravel configuration commands..
+
+For access container run `docker exec -it book-store bash`.
+
+Type the following commands inside the container bash:
+
 ```bash
 composer install
 php artisan key:generate
 php artisan migrate
-php artisan serve
 ```
-
 ## Endpoints
 
 ## Auth
