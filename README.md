@@ -11,7 +11,7 @@ git clone git@github.com:guibmolina/book-store.git
 
 **For deployment with docker is required to install [Docker](https://docs.docker.com/desktop/)**
 
-With docker installed run on terminal  `docker-compose up -d`.
+With docker installed run on terminal  `docker compose up -d --build`.
 
 Copy file `.env.example` e rename for  `.env` like the example.
 
