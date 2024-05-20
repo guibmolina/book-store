@@ -13,7 +13,7 @@ git clone git@github.com:guibmolina/book-store.git
 
 With docker installed run on terminal  `docker-compose up -d`.
 
-Copy filw `.env.example` e rename for  `.env` like the example.
+Copy file `.env.example` e rename for  `.env` like the example.
 
 ```bash
 cp .env.example .env
